@@ -1,7 +1,8 @@
 # Node-Red Docker with Oracle Drivers
 
-[! [Docker Pulls] (https://img.shields.io/docker/pulls/tommi2day/node-red-oracle.svg)] (https://hub.docker.com/r/tommi2day/node-red -oracle /)
-This image is based on [Node-RED] (https://github.com/node-red/node-red-docker) including [node-oracledb] (https://github.com/oracle/node-oracledb) and [node-red-contrib-oracledb-mod] (https://github.com/vtulluru/node-red-contrib-oracledb-mod) extension.
+[![Docker Pulls](https://img.shields.io/docker/pulls/pavanello/node-red-oracle.svg)](https://hub.docker.com/r/pavanello/node-red-oracle/)
+
+This image is based on [Node-RED](https://github.com/node-red/node-red-docker) including [node-oracledb](https://github.com/oracle/node-oracledb) and [node-red-contrib-oracledb-mod](https://github.com/vtulluru/node-red-contrib-oracledb-mod) extension.
 
 ## Included
 
@@ -12,16 +13,16 @@ This image is based on [Node-RED] (https://github.com/node-red/node-red-docker) 
 
 ## Atention
 
-Use '/usr/lib/instantclient' for path in [node-red-contrib-oracledb-mod] (https://github.com/vtulluru/node-red-contrib-oracledb-mod)
+Use `/usr/lib/instantclient` for path in [node-red-contrib-oracledb-mod](https://github.com/vtulluru/node-red-contrib-oracledb-mod)
 
 ## Build
 
 Create a location to store the configuration files:
-``
+```bash
 git clone https://github.com/Tommi2Day/node-red-oracle.git
 cd node-red-oracle
 docker build -t tommi2day / node-red-oracle --build-arg ORACLE_VERS = 12.1.0.2.0 -f Dockerfile.node-red-oracle.
-``
+```
 ## Run
 
 See [Node-RED] documentation (https://hub.docker.com/r/nodered/node-red)
