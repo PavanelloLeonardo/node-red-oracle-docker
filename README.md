@@ -19,9 +19,9 @@ Use `/usr/lib/instantclient` for path in [node-red-contrib-oracledb-mod](https:/
 
 Create a location to store the configuration files:
 ```bash
-git clone https://github.com/Tommi2Day/node-red-oracle.git
-cd node-red-oracle
-docker build -t tommi2day / node-red-oracle --build-arg ORACLE_VERS = 12.1.0.2.0 -f Dockerfile.node-red-oracle.
+git clone https://github.com/PavanelloLeonardo/node-red-oracle-docker.git
+cd node-red-oracle-docker
+docker build -t **** -f Dockerfile.node-red-oracle-docker .
 ```
 ## Run
 
